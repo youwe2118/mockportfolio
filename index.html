@@ -418,6 +418,65 @@
       box-shadow: 0 6px 20px rgba(76, 201, 240, 0.2);
     }
 
+    .btn-cv {
+      background: rgba(76, 201, 240, 0.12);
+      color: var(--accent-cyan);
+      border: 1.5px solid var(--accent-cyan);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 18px rgba(76, 201, 240, 0.22);
+      text-decoration: none;
+    }
+
+    .btn-cv:hover {
+      background: var(--accent-cyan);
+      color: #060b13;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(76, 201, 240, 0.5);
+      border-color: var(--accent-cyan);
+    }
+
+    .btn-cv i {
+      font-size: 1.05rem;
+      transition: transform var(--transition-fast);
+    }
+
+    .btn-cv:hover i {
+      transform: translateY(2px);
+    }
+
+    .nav-btn-cv {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 15px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: var(--accent-gradient);
+      box-shadow: 0 2px 14px rgba(123, 47, 247, 0.35);
+      border: none;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+    }
+
+    .nav-btn-cv:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 22px rgba(76, 201, 240, 0.55);
+      color: #ffffff;
+    }
+
+    .about-cv-btn {
+      width: 100%;
+      margin-top: 22px;
+      padding: 12px 20px;
+      font-size: 0.92rem;
+    }
+
+    .mobile-cv-item {
+      display: none;
+    }
+
     /* Glass Cards */
     .glass-card {
       background: var(--glass-card);
@@ -1856,6 +1915,10 @@
         display: flex;
       }
 
+      .mobile-cv-item {
+        display: block;
+      }
+
       .nav-menu {
         position: fixed;
         top: 70px;
@@ -2012,11 +2075,16 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#extracurriculars" class="nav-link">Extracurriculars</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li class="mobile-cv-item"><a href="assets/Yuvraj_Sablani_CV.pdf" download="Yuvraj_Sablani_CV.pdf" class="nav-link"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a></li>
         </ul>
       </nav>
 
       <!-- Nav Actions -->
       <div class="nav-actions">
+        <a href="assets/Yuvraj_Sablani_CV.pdf" download="Yuvraj_Sablani_CV.pdf" class="nav-btn-cv" title="Download Curriculum Vitae">
+          <i class="fa-solid fa-file-arrow-down"></i> <span>CV</span>
+        </a>
+
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
           <i class="fa-solid fa-moon" id="theme-icon"></i>
         </button>
@@ -2071,6 +2139,9 @@
         <div class="hero-cta reveal delay-3">
           <a href="#projects" class="btn btn-primary">
             View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="assets/Yuvraj_Sablani_CV.pdf" download="Yuvraj_Sablani_CV.pdf" class="btn btn-cv">
+            <i class="fa-solid fa-file-arrow-down"></i> Download CV
           </a>
           <a href="#contact" class="btn btn-outline">
             Get in Touch <i class="fa-regular fa-paper-plane"></i>
@@ -2154,6 +2225,10 @@
                 <span class="info-value">1st Year (2026&ndash;30)</span>
               </li>
             </ul>
+
+            <a href="assets/Yuvraj_Sablani_CV.pdf" download="Yuvraj_Sablani_CV.pdf" class="btn btn-cv about-cv-btn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume / CV
+            </a>
           </div>
 
           <!-- Right Column: Bio Narrative -->
