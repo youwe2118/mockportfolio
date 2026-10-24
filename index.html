@@ -1400,6 +1400,60 @@
       color: #ffffff;
     }
 
+        /* ==========================================================================
+       Extracurriculars Preview Accent Styles (Project Card Format)
+       ========================================================================== */
+    .ec-preview-gold {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.18) 0%, rgba(123, 47, 247, 0.22) 100%) !important;
+    }
+    .ec-icon-gold {
+      color: #f59e0b !important;
+      filter: drop-shadow(0 10px 20px rgba(245, 158, 11, 0.4)) !important;
+    }
+    .ec-badge-gold {
+      color: #fbbf24 !important;
+      border-color: rgba(245, 158, 11, 0.4) !important;
+    }
+    .ec-tag-gold {
+      color: #fbbf24 !important;
+      background: rgba(245, 158, 11, 0.1) !important;
+      border-color: rgba(245, 158, 11, 0.25) !important;
+    }
+
+    .ec-preview-cyan {
+      background: linear-gradient(135deg, rgba(76, 201, 240, 0.18) 0%, rgba(123, 47, 247, 0.22) 100%) !important;
+    }
+    .ec-icon-cyan {
+      color: var(--accent-cyan) !important;
+      filter: drop-shadow(0 10px 20px rgba(76, 201, 240, 0.4)) !important;
+    }
+    .ec-badge-cyan {
+      color: var(--accent-cyan) !important;
+      border-color: rgba(76, 201, 240, 0.4) !important;
+    }
+    .ec-tag-cyan {
+      color: var(--accent-cyan) !important;
+      background: rgba(76, 201, 240, 0.1) !important;
+      border-color: rgba(76, 201, 240, 0.25) !important;
+    }
+
+    .ec-preview-purple {
+      background: linear-gradient(135deg, rgba(123, 47, 247, 0.18) 0%, rgba(199, 125, 255, 0.22) 100%) !important;
+    }
+    .ec-icon-purple {
+      color: var(--accent-violet) !important;
+      filter: drop-shadow(0 10px 20px rgba(123, 47, 247, 0.4)) !important;
+    }
+    .ec-badge-purple {
+      color: var(--accent-violet) !important;
+      border-color: rgba(123, 47, 247, 0.4) !important;
+    }
+    .ec-tag-purple {
+      color: var(--accent-violet) !important;
+      background: rgba(123, 47, 247, 0.1) !important;
+      border-color: rgba(123, 47, 247, 0.25) !important;
+    }
+
     /* ==========================================================================
        7. Contact Section
        ========================================================================== */
@@ -2665,113 +2719,62 @@
           </p>
         </div>
 
-        <!-- 3-Column Extracurriculars Cards Grid -->
-        <div class="ec-grid">
+        <!-- 3-Column Extracurriculars Cards Grid (Vertical Rectangles) -->
+        <div class="projects-grid">
           <!-- Card 1: Hackathons -->
-          <div class="glass-card ec-card reveal">
-            <div class="ec-header">
-              <div class="ec-icon-wrapper gold-glow">
-                <i class="fa-solid fa-trophy"></i>
-              </div>
-              <span class="ec-pill gold">Hackathons</span>
+          <div class="project-card reveal">
+            <div class="project-preview ec-preview-gold">
+              <span class="project-badge ec-badge-gold">Hackathons</span>
+              <i class="fa-solid fa-trophy project-icon-large ec-icon-gold"></i>
             </div>
-            <h3 class="ec-title">Competitive Hackathons</h3>
-            <p class="ec-desc">
-              Thriving in fast-paced 36-hour sprint environments, translating creative product ideas into working full-stack prototypes and resilient architectures.
-            </p>
-            <div class="ec-highlight-box">
-              <div class="ec-item">
-                <div class="ec-item-badge"><i class="fa-solid fa-award"></i></div>
-                <div class="ec-item-text">
-                  <strong>Code2Create Finalist</strong>
-                  <span>Flagship national hackathon; engineered an innovative software solution under strict deadlines.</span>
-                </div>
+            <div class="project-content">
+              <h3 class="project-title">Competitive Hackathons</h3>
+              <p class="project-desc">
+                Competitive hackathon finalist passionate about rapid prototyping, solving challenging algorithmic problems, and shipping high-impact software under tight deadlines.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag ec-tag-gold"><i class="fa-solid fa-award"></i> Code2Create Finalist</span>
+                <span class="project-tag ec-tag-gold"><i class="fa-solid fa-medal"></i> HackGrid Finalist</span>
+                <span class="project-tag">Rapid Prototyping</span>
               </div>
-              <div class="ec-item">
-                <div class="ec-item-badge"><i class="fa-solid fa-medal"></i></div>
-                <div class="ec-item-text">
-                  <strong>HackGrid Finalist</strong>
-                  <span>Selected among top finalists nationwide for rapid ideation, system design, and technical delivery.</span>
-                </div>
-              </div>
-            </div>
-            <div class="ec-tags">
-              <span class="ec-tag">Code2Create Finalist</span>
-              <span class="ec-tag">HackGrid Finalist</span>
-              <span class="ec-tag">Rapid Prototyping</span>
-              <span class="ec-tag">System Design</span>
             </div>
           </div>
 
           <!-- Card 2: Drumming -->
-          <div class="glass-card ec-card reveal delay-1">
-            <div class="ec-header">
-              <div class="ec-icon-wrapper cyan-glow">
-                <i class="fa-solid fa-drum"></i>
-              </div>
-              <span class="ec-pill cyan">Music &amp; Rhythm</span>
+          <div class="project-card reveal delay-1">
+            <div class="project-preview ec-preview-cyan">
+              <span class="project-badge ec-badge-cyan">Music &amp; Rhythm</span>
+              <i class="fa-solid fa-drum project-icon-large ec-icon-cyan"></i>
             </div>
-            <h3 class="ec-title">Drumming &amp; Percussion</h3>
-            <p class="ec-desc">
-              Passionate drummer exploring complex time signatures, polyrhythms, and musical improvisation. The precision of tempo directly fuels focus in algorithmic coding.
-            </p>
-            <div class="ec-highlight-box">
-              <div class="ec-item">
-                <div class="ec-item-badge"><i class="fa-solid fa-headphones"></i></div>
-                <div class="ec-item-text">
-                  <strong>Rhythmic Precision &amp; Groove</strong>
-                  <span>Practicing acoustic &amp; electronic drumming across rock, funk, progressive, and dynamic beats.</span>
-                </div>
+            <div class="project-content">
+              <h3 class="project-title">Drumming &amp; Percussion</h3>
+              <p class="project-desc">
+                Passionate drummer exploring complex time signatures and groove. Playing drums sharpens hand-eye coordination, mental agility, and deep focus.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag ec-tag-cyan">Acoustic Drums</span>
+                <span class="project-tag ec-tag-cyan">Polyrhythms</span>
+                <span class="project-tag ec-tag-cyan">Tempo Control</span>
               </div>
-              <div class="ec-item">
-                <div class="ec-item-badge"><i class="fa-solid fa-bolt"></i></div>
-                <div class="ec-item-text">
-                  <strong>Flow State &amp; Multitasking</strong>
-                  <span>Develops split-second coordination, limb independence, mental endurance, and creative relaxation.</span>
-                </div>
-              </div>
-            </div>
-            <div class="ec-tags">
-              <span class="ec-tag">Acoustic Drums</span>
-              <span class="ec-tag">Polyrhythms</span>
-              <span class="ec-tag">Tempo Control</span>
-              <span class="ec-tag">Jamming</span>
             </div>
           </div>
 
           <!-- Card 3: Football -->
-          <div class="glass-card ec-card reveal delay-2">
-            <div class="ec-header">
-              <div class="ec-icon-wrapper purple-glow">
-                <i class="fa-solid fa-futbol"></i>
-              </div>
-              <span class="ec-pill purple">Sports &amp; Athletics</span>
+          <div class="project-card reveal delay-2">
+            <div class="project-preview ec-preview-purple">
+              <span class="project-badge ec-badge-purple">Sports</span>
+              <i class="fa-solid fa-futbol project-icon-large ec-icon-purple"></i>
             </div>
-            <h3 class="ec-title">Football</h3>
-            <p class="ec-desc">
-              Active football player driven by tactical spatial awareness, high-intensity endurance, and spontaneous on-field teamwork.
-            </p>
-            <div class="ec-highlight-box">
-              <div class="ec-item">
-                <div class="ec-item-badge"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
-                <div class="ec-item-text">
-                  <strong>Tactical Vision &amp; Strategy</strong>
-                  <span>Reading match dynamics, rapid decision-making on transitions, and defensive/offensive positioning.</span>
-                </div>
+            <div class="project-content">
+              <h3 class="project-title">Football</h3>
+              <p class="project-desc">
+                Avid football player driven by tactical spatial awareness, high-intensity stamina, and on-field team leadership in competitive campus matches.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag ec-tag-purple">Tactical Play</span>
+                <span class="project-tag ec-tag-purple">Team Synergy</span>
+                <span class="project-tag ec-tag-purple">Endurance</span>
               </div>
-              <div class="ec-item">
-                <div class="ec-item-badge"><i class="fa-solid fa-users"></i></div>
-                <div class="ec-item-text">
-                  <strong>Team Synergy &amp; Grit</strong>
-                  <span>Fosters mutual trust, high-pressure communication, leadership, and physical stamina.</span>
-                </div>
-              </div>
-            </div>
-            <div class="ec-tags">
-              <span class="ec-tag">Tactical Play</span>
-              <span class="ec-tag">Match Stamina</span>
-              <span class="ec-tag">Team Synergy</span>
-              <span class="ec-tag">Campus Tournaments</span>
             </div>
           </div>
         </div>
